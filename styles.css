@@ -1,4 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Playfair+Display:wght@600&display=swap');
 body{
-    background-color: hsl(216, 12%, 8%);
+    margin: 0;
+    padding: 0;
+    background-color: black;
     color: white;
+    text-align: center;
+}
+h3{
+    font-family: Overpass;
+    font-weight: 700;
+}
+.ratingState{
+    background-color: hsl(216, 12%, 8%);
+    height: 20rem;
+    width: 20rem;
+    /* position: absolute; */
+    margin: auto;
+    margin-top: 10rem;
+    text-align: left;
+    border-radius: 25px;
+    padding: 20px;
+}
+.ratingPara{
+    font-family: Overpass;
+    font-weight: 400;
+    font-size: 15px;
+}
+.starDiv, .grid-item{
+    background-color: hsl(213, 19%, 18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    /* padding: 10px; */
+    border-radius: 50px;
+}
+.starimage{
+    margin: 15px auto 20px auto;
+}
+.grid-container{
+    margin-top: 20px;
+    display: inline-grid;
+    text-align: center;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 20px;
+    
+}
+.btnSubmit{
+    background-color: hsl(25, 97%, 53%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    margin-top: 23px;
+    border-radius: 25px;
 }
