@@ -28,14 +28,14 @@
     to help us improve our offering!</p>
   
     <div class="grid-container">
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item">5</div>
+      <div class="grid-item" onclick="selected(this)" onmouseover="changecol(this)" onmouseleave="colchange(this)">1</div>
+      <div class="grid-item" onclick="selected(this)" onmouseover="changecol(this)" onmouseleave="colchange(this)">2</div>
+      <div class="grid-item" onclick="selected(this)" onmouseover="changecol(this)" onmouseleave="colchange(this)">3</div>
+      <div class="grid-item" onclick="selected(this)" onmouseover="changecol(this)" onmouseleave="colchange(this)">4</div>
+      <div class="grid-item" onclick="selected(this)" onmouseover="changecol(this)" onmouseleave="colchange(this)">5</div>
     </div>
   
-    <div class="btnSubmit">Submit</div>
+    <div class="btnSubmit" onmouseover="changesubmit()" onmouseleave="submitchange()">Submit</div>
   </div>
 
   <!-- Rating state end -->
@@ -56,5 +56,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
