@@ -1,4 +1,5 @@
 "use strict";
+let rating = 0;
 function changecol(x) {
   x.style.backgroundColor = "hsl(25, 97%, 53%)";
 }
@@ -18,6 +19,8 @@ const submitchange = () => {
     "hsl(0, 0%, 100%)";
 };
 function selected(x) {
+  rating = x.innerHTML;
+  // console.log(rating);
   let items = document.getElementsByClassName("grid-item");
   // console.log(items[0]);
   for (let i = 0; i < items.length; i++) {
@@ -29,3 +32,7 @@ function selected(x) {
   x.setAttribute("onmouseleave", "");
   x.setAttribute("onmouseover", "");
 }
+const submit = () => {
+  document.getElementsByClassName("thankyouState")[0].style.zIndex = 1;
+  document.getElementsByClassName("rat")[0].innerHTML = rating;
+};
